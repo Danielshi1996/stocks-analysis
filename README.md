@@ -8,8 +8,8 @@ The original dataset consists of thousands of rows of data, each includes the ti
 ## Comparison
 
 Utilizing the for-loop function and the if condition the macro can automate the process of analysis. The original code could run fast, around 0.8s to complete the analysis of one year for 12 different tickers. The refactored can run even faster, around 0.1s for both the year of 2017 and 2018 to complete the same analysis. 
-![Alt text](Resources/ VBA_Challenge_2017.png?raw=true ) 
-![Alt text](Resources/ VBA_Challenge_2018.png?raw=true ) 
+![Alt text](Resources/VBA_Challenge_2017.png?raw=true )
+![Alt text](Resources/VBA_Challenge_2018.png?raw=true ) 
 The main difference in the methodology is that in the original takes a ticker name and run through the whole list before taking another. Instead, the refactored code switch to the next ticker when the previous row was determined to be the last row for last ticker. Thus, the refactored code goes through the list only once. Thus, the refactored code requires less execution time. It may not sound a lot in difference, but in cases that if we are going to analyze thousands more tickers, and the dataset is thousands of times larger. The difference would be minutes comparing to hours.
 
 ## Limitation
